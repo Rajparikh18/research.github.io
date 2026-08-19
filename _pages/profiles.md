@@ -7,22 +7,20 @@ nav: true
 nav_order: 7
 
 profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
   - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
+    image: /assets/img/people/pi-placeholder.jpg
+    content: people/maya-patel.md
     image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
   - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
+    image: /assets/img/people/daniel-kim-placeholder.jpg
+    content: people/daniel-kim.md
     image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+  - align: right
+    image: /assets/img/people/sofia-nguyen-placeholder.jpg
+    content: people/sofia-nguyen.md
+    image_circular: false
+  - align: left
+    image: /assets/img/people/omar-hassan-placeholder.jpg
+    content: people/omar-hassan.md
+    image_circular: false
 ---

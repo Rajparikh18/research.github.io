@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+[YYYY.MM.DD] [Short research update placeholder].

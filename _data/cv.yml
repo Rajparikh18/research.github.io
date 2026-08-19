@@ -30,18 +30,38 @@ cv:
 
 people:
   - name: Maya Patel
+    category: Principal Investigator / Faculty
     role: Principal Investigator
     research_focus: Trustworthy machine learning for scientific discovery and healthcare
+    bio: Leads the group's research agenda across reliability, interpretability, and translational machine learning.
+    email: adaptive-systems@example.edu
+    profile_url: /people/
+    profile_label: Group profile
     photo: /assets/img/people/pi-placeholder.jpg
   - name: Daniel Kim
+    category: PhD Students
     role: PhD Student
     research_focus: Uncertainty quantification for scientific machine learning
+    bio: Works on calibration and uncertainty estimation in low-data and out-of-distribution settings.
+    email: adaptive-systems@example.edu
+    profile_url: /people/
+    profile_label: Group profile
     photo: /assets/img/people/daniel-kim-placeholder.jpg
   - name: Sofia Nguyen
+    category: PhD Students
     role: PhD Student
     research_focus: Robust representation learning for multimodal biomedical data
+    bio: Studies representation learning with missing modalities and heterogeneous biomedical signals.
+    email: adaptive-systems@example.edu
+    profile_url: /people/
+    profile_label: Group profile
     photo: /assets/img/people/sofia-nguyen-placeholder.jpg
   - name: Omar Hassan
+    category: PhD Students
     role: PhD Student
     research_focus: Causal inference and interpretable models for clinical prediction
+    bio: Develops interpretable predictive models and causal analysis methods for clinical decision support.
+    email: adaptive-systems@example.edu
+    profile_url: /people/
+    profile_label: Group profile
     photo: /assets/img/people/omar-hassan-placeholder.jpg

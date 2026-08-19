@@ -2,14 +2,13 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Course materials, schedules, and resources for classes taught.
+description: Courses, seminars, and instructional activities.
 nav: true
 nav_order: 6
-calendar: true
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+This page documents courses and related instructional activities by members of the group. Where available, each course includes a schedule, reading/material links, and assignment information.
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+For prospective students, please also see [Join Us](/join-us/) and [Contact](/contact/).
 
 {% include courses.liquid %}

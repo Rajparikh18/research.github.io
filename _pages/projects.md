@@ -2,64 +2,29 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Research projects and ongoing technical work.
 nav: true
-nav_order: 3
-display_categories: [work, fun]
-horizontal: false
+nav_order: 2
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
-
-{% else %}
-
-<!-- Display projects without categories -->
+This page summarizes ongoing and completed research projects. Each project page provides additional technical detail, references, and related outputs.
 
 {% assign sorted_projects = site.projects | sort: "importance" %}
 
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
+<div class="projects">
+  {% for project in sorted_projects %}
+    <article style="padding: 1.25rem 0; border-bottom: 1px solid rgba(122,31,43,0.25);">
+      <h3 style="margin-bottom: 0.25rem;"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+      {% if project.description %}
+        <p style="margin-bottom: 0.4rem;">{{ project.description }}</p>
+      {% endif %}
+      <p style="margin: 0; font-size: 0.95rem; opacity: 0.9;">
+        {% if project.category %}
+          Area: {{ project.category | capitalize }}
+        {% else %}
+          Area: [Research Area]
+        {% endif %}
+      </p>
+    </article>
+  {% endfor %}
 </div>
